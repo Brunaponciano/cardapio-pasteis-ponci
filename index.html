@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastéis Ponci | Cardápio Digital</title>
+  <meta name="description" content="Cardápio Digital dos Pastéis Ponci. Pastéis crocantes e sequinhos, mini pizzas, salgados no copo, macarrão de pote e marmitex jantinha no Jardim Ibirapuera.">
+  <link rel="icon" type="image/png" href="assets/img/logo-badge.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <header class="top-announcement">
+    <div class="announcement-content">
+      <span>🥟 <strong>Pastéis Ponci</strong> — O autêntico sabor que une pessoas!</span>
+      <span class="announcement-badge">📍 Jd. Ibirapuera</span>
+    </div>
+  </header>
+
+  <!-- Main Navigation Header -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-link">
+        <img src="assets/img/logo-badge.png" alt="Pastéis Ponci" class="brand-logo">
+      </a>
+
+      <div class="nav-actions">
+        <button id="btnOpenQrModal" class="btn btn-qr" title="Gerar e visualizar QR Code para mesas">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+            <line x1="7" y1="7" x2="7.01" y2="7"></line>
+            <line x1="17" y1="7" x2="17.01" y2="7"></line>
+            <line x1="7" y1="17" x2="7.01" y2="17"></line>
+            <line x1="17" y1="17" x2="17.01" y2="17"></line>
+          </svg>
+          <span class="btn-text">QR Code de Mesa</span>
+        </button>
+
+        <button id="btnOpenFlyers" class="btn btn-secondary" title="Ver Panfletos Oficiais">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+            <polyline points="21 15 16 10 5 21"></polyline>
+          </svg>
+          <span class="btn-text">Panfletos</span>
+        </button>
+
+        <a href="https://instagram.com/pasteisponci" target="_blank" rel="noopener" class="btn btn-instagram" title="Siga no Instagram @pasteisponci">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          <span class="btn-text">@pasteisponci</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-backdrop"></div>
+    <div class="container hero-container">
+      <div class="hero-badge">✨ Cardápio Digital Oficial</div>
+      <h1 class="hero-title">Sabor Que Une Pessoas</h1>
+      <p class="hero-subtitle">
+        Pastéis fritos na hora com massa sequinha e crocante, salgadinhos de copo, mini pizzas artesanais, macarrão de pote e nossa exclusiva <strong>Marmitex Jantinha</strong>!
+      </p>
+
+      <div class="hero-highlights">
+        <div class="highlight-item">
+          <span class="highlight-icon">⚡</span>
+          <span>Frito na Hora</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🧀</span>
+          <span>Super Recheado</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🍝</span>
+          <span>Massas Caseiras</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">📍</span>
+          <span>Jd. Ibirapuera</span>
+        </div>
+      </div>
+
+      <!-- Notice: View-only Cardápio -->
+      <div class="view-only-notice">
+        <svg class="notice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        <div class="notice-text">
+          <strong>Cardápio para Visualização e Consulta de Preços:</strong> 
+          Faça seu pedido diretamente com nosso atendimento no balcão ou na mesa. Bom apetite!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Launch Banner: Mini Pizza -->
+  <section class="container special-banner-section">
+    <div class="special-card">
+      <div class="special-tag">🔥 NOVIDADE CHEGANDO PRA VOCÊ!</div>
+      <div class="special-body">
+        <div class="special-info">
+          <h2>As Famosas Mini Pizzas da Ponci</h2>
+          <p>A qualidade e o sabor dos pastéis que você já conhece, agora também em formato <strong>Mini Pizza</strong>! Massa crocante e fofinha, molho temperado e queijo bem derretido.</p>
+          <div class="special-price-row">
+            <span class="special-price-label">Por apenas</span>
+            <span class="special-price-val">R$ 8,00</span>
+            <span class="special-price-unit">a unidade</span>
+          </div>
+        </div>
+        <div class="special-image-box">
+          <img src="assets/img/item-mini-pizza.jpg" alt="Mini Pizza Ponci" class="special-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marmitex Jantinha "La Mama Mia" Interactive Week Section -->
+  <section id="jantinha-section" class="container jantinha-section">
+    <div class="section-header-row">
+      <div>
+        <span class="section-tag">🇮🇹 LA MAMA MIA • PASTÉIS PONCI</span>
+        <h2 class="section-title">Marmitex Jantinha da Semana</h2>
+        <p class="section-subtitle">
+          Sabor e praticidade para a sua semana! Vendido de <strong>Segunda a Sexta, das 18:00 às 21:00</strong>.
+        </p>
+      </div>
+      <div class="jantinha-badge-time">
+        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        <span>18:00 às 21:00</span>
+      </div>
+    </div>
+
+    <!-- Day Selector Tabs -->
+    <div class="weekday-tabs" id="weekdayTabs">
+      <button class="day-tab" data-day="segunda">
+        <span class="day-short">SEG</span>
+        <span class="day-full">Segunda</span>
+      </button>
+      <button class="day-tab" data-day="terca">
+        <span class="day-short">TER</span>
+        <span class="day-full">Terça</span>
+      </button>
+      <button class="day-tab" data-day="quarta">
+        <span class="day-short">QUA</span>
+        <span class="day-full">Quarta</span>
+      </button>
+      <button class="day-tab" data-day="quinta">
+        <span class="day-short">QUI</span>
+        <span class="day-full">Quinta</span>
+      </button>
+      <button class="day-tab" data-day="sexta">
+        <span class="day-short">SEX</span>
+        <span class="day-full">Sexta</span>
+      </button>
+    </div>
+
+    <!-- Day Dish Spotlight Card -->
+    <div class="jantinha-spotlight" id="jantinhaSpotlight">
+      <!-- Injected via JavaScript -->
+    </div>
+
+    <!-- Massas de Pote Options -->
+    <div class="massas-substrip">
+      <div class="massas-strip-title">
+        <span>🍲 Nossos Deliciosos Macarrão de Pote:</span>
+      </div>
+      <div class="massas-tags">
+        <span class="massa-tag"><img src="assets/img/massa-raviole.jpg" alt="Raviole"> Raviole Artesanal</span>
+        <span class="massa-tag"><img src="assets/img/massa-capelete.jpg" alt="Capelete"> Capelete Recheado</span>
+        <span class="massa-tag"><img src="assets/img/massa-inhoque.jpg" alt="Inhoque"> Inhoque Tradicional</span>
+      </div>
+      <div class="massas-potes-pricing">
+        <span class="pote-pill">Pote Pequeno: <strong>R$ 15,00</strong></span>
+        <span class="pote-pill">Pote Grande: <strong>R$ 20,00</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Filters & Search Bar -->
+  <section class="container filters-section" id="cardapio">
+    <div class="section-title-wrap">
+      <span class="section-tag">🍽️ NOSSO CARDÁPIO COMPLETO</span>
+      <h2 class="section-title">Escolha suas Delícias</h2>
+      <p class="section-subtitle">Consulte todos os pratos, salgados, massas e bebidas disponíveis</p>
+    </div>
+
+    <div class="controls-toolbar">
+      <!-- Search Input -->
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Buscar pastel, queijo, refrigerante, massa..." autocomplete="off">
+        <button id="btnClearSearch" class="btn-clear" style="display:none;" title="Limpar busca">&times;</button>
+      </div>
+
+      <!-- Categories Chips -->
+      <div class="categories-scroll" id="categoryChips">
+        <button class="cat-chip active" data-category="todos">
+          <span>✨ Todos</span>
+          <span class="cat-count" id="count-todos">0</span>
+        </button>
+        <button class="cat-chip" data-category="pasteis">
+          <span>🥟 Pastéis & Salgados</span>
+          <span class="cat-count" id="count-pasteis">0</span>
+        </button>
+        <button class="cat-chip" data-category="massas">
+          <span>🍝 Massas & Potes</span>
+          <span class="cat-count" id="count-massas">0</span>
+        </button>
+        <button class="cat-chip" data-category="jantinha">
+          <span>🇮🇹 Marmitex Jantinha</span>
+          <span class="cat-count" id="count-jantinha">0</span>
+        </button>
+        <button class="cat-chip" data-category="pratos">
+          <span>🍲 Cuscuz Paulista</span>
+          <span class="cat-count" id="count-pratos">0</span>
+        </button>
+        <button class="cat-chip" data-category="pizzas">
+          <span>🍕 Mini Pizza</span>
+          <span class="cat-count" id="count-pizzas">0</span>
+        </button>
+        <button class="cat-chip" data-category="bebidas">
+          <span>🥤 Bebidas & Cervejas</span>
+          <span class="cat-count" id="count-bebidas">0</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Items Grid Section -->
+  <section class="container menu-grid-section">
+    <div class="menu-grid" id="menuGrid">
+      <!-- Injected via JavaScript -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="empty-state" style="display:none;">
+      <div class="empty-icon">🔍</div>
+      <h3>Nenhum item encontrado</h3>
+      <p>Tente buscar por outro nome ou selecione outra categoria acima.</p>
+      <button id="btnResetFilter" class="btn btn-primary">Ver Todos os Itens</button>
+    </div>
+  </section>
+
+  <!-- Pastéis Ponci Traditions & Flavors Modal Trigger -->
+  <section class="container flavors-highlight-section">
+    <div class="flavors-box">
+      <div class="flavors-icon-col">🥟</div>
+      <div class="flavors-content-col">
+        <h3>Quais os sabores de pastel de hoje?</h3>
+        <p>Preparamos pastéis recheados de verdade! Temos opções salgadas e doces feitas na hora com massa fininha e crocante.</p>
+        <button id="btnVerSabores" class="btn btn-outline-gold">
+          <span>Ver Lista de Sabores Tradicionais</span>
+          <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Contact Footer Banner -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <img src="assets/img/logo-badge.png" alt="Pastéis Ponci Logo" class="footer-logo">
+        <p class="footer-slogan">"Sabor que une pessoas"</p>
+        <p class="footer-desc">
+          Pastelaria tradicional no Jardim Ibirapuera. Massas caseiras, recheios de dar água na boca e atendimento com carinho de família.
+        </p>
+      </div>
+
+      <div class="footer-col info-col">
+        <h4>Informações de Atendimento</h4>
+        <ul class="info-list">
+          <li>
+            <svg class="icon-tiny" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span><strong>Localização:</strong> Jardim Ibirapuera</span>
+          </li>
+          <li>
+            <svg class="icon-tiny" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span><strong>Marmitex Jantinha:</strong> Seg a Sex, das 18h às 21h</span>
+          </li>
+          <li>
+            <svg class="icon-tiny" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span><strong>Instagram:</strong> <a href="https://instagram.com/pasteisponci" target="_blank" rel="noopener">@pasteisponci</a></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col qr-col">
+        <h4>Acesse pelo Celular</h4>
+        <p>Escaneie o QR Code na sua mesa para abrir o cardápio no seu smartphone ou compartilhe com seus amigos!</p>
+        <button id="btnFooterQr" class="btn btn-primary btn-block">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+          <span>Abrir QR Code / Imprimir Placa</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Pastéis Ponci. Todos os direitos reservados. Cardápio digital para visualização.</p>
+        <p class="love-tag">Feito com carinho para a mãe do criador ❤️</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile QR Button -->
+  <div class="floating-bar">
+    <button id="btnFloatingQr" class="floating-btn" title="Ver QR Code da Mesa">
+      <svg class="floating-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="3" width="7" height="7"></rect>
+        <rect x="14" y="3" width="7" height="7"></rect>
+        <rect x="14" y="14" width="7" height="7"></rect>
+        <rect x="3" y="14" width="7" height="7"></rect>
+      </svg>
+      <span>QR Code da Mesa</span>
+    </button>
+    <a href="#cardapio" class="floating-btn secondary" title="Ir para o Cardápio">
+      <span>🍽️ Cardápio</span>
+    </a>
+  </div>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- 1. Item Details Modal -->
+  <div id="itemModal" class="modal-backdrop">
+    <div class="modal-card">
+      <button class="modal-close" id="btnCloseItemModal">&times;</button>
+      <div class="modal-image-wrap">
+        <img id="modalItemImage" src="" alt="Foto do Produto" class="modal-item-img">
+        <span id="modalItemCategory" class="modal-badge-category">Categoria</span>
+      </div>
+      <div class="modal-body">
+        <div class="modal-header-line">
+          <h2 id="modalItemTitle" class="modal-title">Título do Produto</h2>
+          <span id="modalItemPrice" class="modal-price">R$ 0,00</span>
+        </div>
+        <p id="modalItemDescription" class="modal-description">Descrição detalhada</p>
+
+        <div id="modalExtraSection" class="modal-extra-section">
+          <!-- Flavors or options injected dynamically -->
+        </div>
+
+        <div class="modal-order-notice">
+          <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <span>Gostou deste item? Faça o seu pedido diretamente no balcão ou chame o atendente na sua mesa!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. QR Code & Printable Stand Modal -->
+  <div id="qrModal" class="modal-backdrop">
+    <div class="modal-card qr-modal-card">
+      <button class="modal-close" id="btnCloseQrModal">&times;</button>
+
+      <div class="qr-modal-header">
+        <div class="qr-header-badge">📱 ACESSO RÁPIDO AO CARDÁPIO</div>
+        <h2>QR Code dos Pastéis Ponci</h2>
+        <p>Aponte a câmera do seu celular para escanear ou use as opções abaixo para imprimir as placas das mesas!</p>
+      </div>
+
+      <div class="qr-display-box">
+        <div id="qrCodeContainer" class="qrcode-wrapper">
+          <!-- QRCode.js renders canvas here -->
+        </div>
+        <div class="qr-meta">
+          <div class="qr-store-name">🥟 Pastéis Ponci</div>
+          <div class="qr-store-slogan">Sabor que une pessoas</div>
+          <div class="qr-store-instagram">Instagram: @pasteisponci</div>
+        </div>
+      </div>
+
+      <!-- Configurable URL Input (defaults to current browser URL) -->
+      <div class="qr-url-box">
+        <label for="customUrlInput">Link codificado no QR Code:</label>
+        <div class="qr-input-group">
+          <input type="text" id="customUrlInput" class="qr-input" placeholder="https://seu-site.com">
+          <button id="btnUpdateQr" class="btn btn-secondary-sm">Atualizar</button>
+        </div>
+        <small class="qr-hint">Você pode alterar para o endereço final do site quando publicar na internet.</small>
+      </div>
+
+      <!-- Actions -->
+      <div class="qr-actions-grid">
+        <button id="btnPrintTableTent" class="btn btn-gold btn-lg">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>Imprimir Placa de Mesa (Display de Balcão)</span>
+        </button>
+
+        <button id="btnDownloadQr" class="btn btn-outline">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Baixar Imagem QR Code</span>
+        </button>
+
+        <button id="btnCopyLink" class="btn btn-outline">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span id="copyLinkText">Copiar Link do Cardápio</span>
+        </button>
+
+        <button id="btnShareWhatsApp" class="btn btn-whatsapp">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <span>Compartilhar via WhatsApp</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Original Flyers Gallery Modal -->
+  <div id="flyersModal" class="modal-backdrop">
+    <div class="modal-card modal-lg">
+      <button class="modal-close" id="btnCloseFlyersModal">&times;</button>
+      <div class="flyers-modal-header">
+        <h2>Panfletos e Divulgações Oficiais</h2>
+        <p>Veja os materiais gráficos originais dos Pastéis Ponci</p>
+      </div>
+
+      <div class="flyers-tabs">
+        <button class="flyer-tab-btn active" data-flyer="cardapio-geral">Cardápio Geral</button>
+        <button class="flyer-tab-btn" data-flyer="mini-pizza">Mini Pizza</button>
+        <button class="flyer-tab-btn" data-flyer="jantinha">Marmitex Jantinha</button>
+        <button class="flyer-tab-btn" data-flyer="massas">Macarrão de Pote</button>
+        <button class="flyer-tab-btn" data-flyer="jantinha-ilustrada">Jantinha Ilustrada</button>
+      </div>
+
+      <div class="flyer-viewer-wrap">
+        <img id="flyerViewerImg" src="assets/img/cardapio-geral.jpg" alt="Panfleto Oficial" class="flyer-viewer-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Sabores de Pastel Modal -->
+  <div id="saboresModal" class="modal-backdrop">
+    <div class="modal-card">
+      <button class="modal-close" id="btnCloseSaboresModal">&times;</button>
+      <div class="sabores-modal-header">
+        <span class="badge-gold">🥟 PASTÉIS PONCI • R$ 14,00</span>
+        <h2>Sabores Tradicionais da Casa</h2>
+        <p>Massa artesanal fininha, sequinha, crocante e recheio generoso!</p>
+      </div>
+
+      <div class="sabores-category-group">
+        <h4>🧀 Sabores Salgados</h4>
+        <div class="sabores-tags-grid">
+          <span class="sabor-tag">🥩 Carne Temperada Especial</span>
+          <span class="sabor-tag">🧀 Queijo Mussarela Derretido</span>
+          <span class="sabor-tag">🍗 Frango Desfiado com Catupiry</span>
+          <span class="sabor-tag">🍕 Pizza (Queijo, Presunto, Tomate e Orégano)</span>
+          <span class="sabor-tag">🥩🧀 Carne Moída com Queijo</span>
+          <span class="sabor-tag">🍖🧀 Calabresa Fatiada com Queijo</span>
+          <span class="sabor-tag">🥪 Bauru Especial Ponci</span>
+          <span class="sabor-tag">🍗🧀 Frango com Queijo Mussarela</span>
+          <span class="sabor-tag">🥓🧀 Bacon com Queijo Mussarela</span>
+          <span class="sabor-tag">🌿 Palmito Cremoso</span>
+        </div>
+      </div>
+
+      <div class="sabores-category-group" style="margin-top: 20px;">
+        <h4>🍫 Sabores Doces</h4>
+        <div class="sabores-tags-grid">
+          <span class="sabor-tag">❤️ Romeu & Julieta (Queijo com Goiabada)</span>
+          <span class="sabor-tag">🍫 Chocolate ao Leite Cremoso</span>
+          <span class="sabor-tag">🍌 Banana com Canela e Açúcar</span>
+          <span class="sabor-tag">🍫🍓 Chocolate com Morango (Consulte)</span>
+        </div>
+      </div>
+
+      <div class="sabores-modal-footer">
+        <p>⚠️ <em>Consulte a disponibilidade dos sabores do dia diretamente no balcão!</em></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PRINTABLE TABLE TENT (PRINT ONLY) ==================== -->
+  <div id="printableTableTent" class="print-only-table-tent">
+    <div class="table-tent-card">
+      <div class="tent-header">
+        <img src="assets/img/logo-badge.png" alt="Pastéis Ponci Logo" class="tent-logo">
+        <div class="tent-slogan">SABOR QUE UNE PESSOAS</div>
+      </div>
+
+      <div class="tent-divider"></div>
+
+      <div class="tent-body">
+        <h1 class="tent-title">CARDÁPIO DIGITAL</h1>
+        <p class="tent-instruction">
+          Aponte a câmera do seu celular para o QR Code abaixo e veja todos os nossos preços e novidades:
+        </p>
+
+        <div class="tent-qr-box">
+          <div id="printQrCodeContainer" class="tent-qr"></div>
+        </div>
+
+        <div class="tent-highlight-features">
+          <span>🥟 Pastéis Crocantes</span>
+          <span>🍕 Mini Pizza</span>
+          <span>🍝 Marmitex Jantinha</span>
+          <span>🥤 Bebidas Geladas</span>
+        </div>
+      </div>
+
+      <div class="tent-footer">
+        <div class="tent-social">📸 Siga no Instagram: <strong>@pasteisponci</strong></div>
+        <div class="tent-location">📍 Jardim Ibirapuera</div>
+        <div class="tent-call">Peça diretamente no balcão ou com nosso atendimento!</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/qrcode.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
