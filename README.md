@@ -71,7 +71,12 @@ Basta dar dois cliques no arquivo `index.html` em qualquer navegador (Google Chr
 
 ---
 
-## 🌐 Como Publicar na Internet Gratuitamente (Para os clientes acessarem com 3G/4G/5G)
+## 🌐 Link Oficial do Cardápio no Ar (GitHub Pages)
+
+Acesse o cardápio publicado diretamente no link:
+👉 **[https://brunaponciano.github.io/cardapio-pasteis-ponci/](https://brunaponciano.github.io/cardapio-pasteis-ponci/)**
+
+*(Para ativar, basta ir em **Settings > Pages** no seu repositório do GitHub e selecionar o branch `main`! Veja o passo a passo abaixo).*
 
 Para que qualquer cliente possa escanear o QR code da mesa usando dados móveis (mesmo sem estar no Wi-Fi da pastelaria), você pode publicar o site de graça em 2 minutos em plataformas como:
 

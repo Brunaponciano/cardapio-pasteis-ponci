@@ -534,8 +534,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function getCardapioUrl() {
     let url = window.location.href.split('#')[0];
     if (url.startsWith('file://')) {
-      // If opened locally via file protocol, provide a friendly default or placeholder
-      return 'https://pasteisponci.com.br';
+      // Se aberto localmente como arquivo, codifica a URL oficial do GitHub Pages
+      return 'https://brunaponciano.github.io/cardapio-pasteis-ponci/';
     }
     return url;
   }
